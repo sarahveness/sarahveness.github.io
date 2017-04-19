@@ -1,3 +1,9 @@
+/////////////// VARIABLES ///////////////
+$screen-phone: 40rem;
+$screen-tablet: 65rem;
+$screen-desktop: 90rem;
+$screen-large-desktop: 120rem;
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -26,6 +32,10 @@ body {
   box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.6);
 }
 
+.titleholder {
+  width: 800px;
+}
+
 .title {
   font-weight: 400;
   font-size: 3em;
@@ -34,6 +44,10 @@ body {
   margin-top: 6%;
   margin-left: 15%;
   background-color: #ECE9E2;
+  @media only screen and (max-width: $screen-phone) {
+    margin-top: 28%;
+    margin-left: 7%;
+  }
 }
 
 .title2 {
@@ -44,6 +58,12 @@ body {
   margin-top: 12.65%;
   margin-left: 25%;
   background-color: #FFF8E3;
+
+  @media only screen and (max-width: $screen-phone) {
+    font-size: 1.25em;
+    margin-top: 55%;
+    margin-left: 16%;
+  }
 }
 
 .bodytext {
