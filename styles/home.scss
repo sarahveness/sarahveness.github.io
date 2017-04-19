@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #222222;
+}
+
+.jumbotron {
+  height: 50%;
+  background-image: url('random-geometric-pattern-vector.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(255,255,255,0.6);
+
+}
+
+.title {
+font-weight: 400;
+font-size: 3em;
+position: absolute;
+padding: 20px;
+margin-top: 6%;
+margin-left: 10%;
+background-color: #ECE9E2;
+}
+
+.title2 {
+font-weight: 300;
+font-size: 3em;
+position: absolute;
+padding: 20px;
+margin-top: 12.65%;
+margin-left: 20%;
+background-color: #FFF8E3;
+}
+
+.bodytext {
+  height: 50%;
+}
