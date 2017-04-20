@@ -4,6 +4,9 @@ $screen-tablet: 979px;
 $screen-desktop: 980px;
 $screen-large-desktop: 120rem;
 
+
+
+//////// GLOBAL STYLES /////////
 html {
   box-sizing: border-box;
   height: 100%;
@@ -23,8 +26,15 @@ body {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23f4ffb6' fill-opacity='0.52'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
+  border: 20px solid white;
 }
 
+#projects, #contact {
+  height: 100%;
+}
+
+
+///////// TOP ////////
 .jumbotron {
   height: 50%;
   background-image: url('random-geometric-pattern-vector.jpg');
@@ -41,12 +51,12 @@ body {
   margin-top: 6%;
   margin-left: 15%;
   background-color: #ECE9E2;
+  @media only screen and (max-width: $screen-tablet) {
+    margin-top: 13%;
+  }
   @media only screen and (max-width: $screen-phone) {
     margin-top: 28%;
     margin-left: 7%;
-  }
-  @media only screen and (max-width: $screen-tablet) {
-    margin-top: 13%;
   }
 }
 
@@ -73,3 +83,107 @@ body {
 .bodytext {
   height: 50%;
 }
+
+
+/////// Nav Bar ///////////
+
+#navb-sticky-wrapper {
+  height: 10% !important;
+  background-color: rgba(255,255,255,0.6);
+}
+
+#navb {
+  background-color: rgba(255,255,255,0.6);
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  background-color: rgba(255,255,255,0.6);
+  overflow: hidden;
+}
+
+.navbar a {
+  display: inline-block;
+  color: darkgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 11%;
+  margin-left: 13%;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #DFF2EF;
+}
+
+
+///// RAMBLINGS /////
+
+.ramblings {
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+}
+
+////////// PROJECTS /////
+
+.projects {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/////// CONTACT ///////
+
+.contact {
+  height: 110%;
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle {
+  background-color: rgba(199, 252, 243, 0.4);
+  width: 80%;
+  height: 50%;
+  margin-top: 10%;
+
+}
+
+
+
+
+
+///// TRIANGLE /////
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 690px solid transparent;
+	border-right: 690px solid transparent;
+	border-bottom: 724px solid red;
+  padding-top: 47px;
+}
+
+.triangle-inverse {
+	width: 0;
+	height: 0;
+	border-left: 690px solid transparent;
+	border-right: 690px solid transparent;
+	border-top: 724px solid red;
+  margin-top: 47px;
+  margin-right: 20px;
+}
+
+  .triangle3 {
+    width: 0;
+  	height: 0;
+  	border-left: 680px solid transparent;
+  	border-right: 700px solid transparent;
+  	border-bottom: 724px solid red;
+  }

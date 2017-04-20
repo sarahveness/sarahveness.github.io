@@ -15,21 +15,48 @@
 
     <title>Sarah Veness</title>
 
-    <link rel="stylesheet" type="text/css" href="styles/home.min.css">
+    <script src="dist/js/smooth-scroll.js"></script>
     <script src="https://use.fontawesome.com/1ab1b81095.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/home.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500">
+
   </head>
 
   <body>
-    <div class="jumbotron">
+    <section class="jumbotron">
       <div class="title">Sarah Veness</div>
       <div class="title2">Front End Web Developer</div>
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="three-columns">
+    <nav class="navbar" id="navb">
+      <a data-scroll href="#ramblings">Ramblings</a>
+      <a data-scroll href="#projects">Projects</a>
+      <a data-scroll href="#contact">Contact</a>
+    </nav>
+
+    <section class="ramblings" id="ramblings">
+    </section>
+
+    <section class="projects" id="projects">
+
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="rectangle">
+        <div class="contactinfo">
+        </div>
       </div>
-    </div>
+    </section>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.sticky.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#navb").sticky({topSpacing:0});
+      });
+
+      smoothScroll.init();
+    </script>
 
   </body>
 </html>
